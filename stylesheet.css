@@ -3,3 +3,140 @@
     padding: 0px;
     margin: 0px;
 }
+
+body {
+    background-color: gainsboro;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.page-container {
+    width: 1080px;
+    height: 5000px;
+    background-color: white;
+    margin: auto;
+}
+
+.video-container {
+    display: flex;
+    width: 100%;    
+    margin-bottom: 20px;
+}
+
+.video-container__video {    
+    height: 476px;
+    max-width: 824px;
+    min-width: 824px;
+    background-color: beige;
+    flex-grow: 1;
+}
+
+.video-container__timestamps {    
+    height: 476px;
+    background-color: darkorange;
+    flex-grow: 1;
+}
+
+.intro-container {
+    display: flex;
+    width: 100%;   
+    margin-bottom: 40px;
+}
+
+.intro-container__text {
+    height: 176px;
+    max-width: 824px;
+    background-color: steelblue;
+    flex-grow: 1;
+}
+
+.intro-container__links {
+    height: 176px;    
+    background-color: darkgoldenrod;
+    flex-grow: 1;
+}
+
+.intro-container__link {
+    width: 200px;
+    background-color: darkmagenta;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.intro-container__title {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.intro-container__body {
+    font-size: 20px;
+    /*    line-height: 30px;*/
+}
+
+.technologies-container {
+    display: flex;
+    width: 100%;   
+    margin-bottom: 40px;
+}
+
+.technologies-container__text {
+    height: 176px;
+    max-width: 824px;
+    background-color: lightgreen;
+    flex-grow: 1;
+}
+
+.technologies-container__title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.technologies-container__body {
+    font-size: 20px;
+    /*    line-height: 30px;*/
+}
+
+.technologies-container__section-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.technologies-container__technology {
+    margin-bottom: 30px;
+}
+
+.technologies-container__links {
+    height: 276px;    
+    background-color: darkgoldenrod;
+    flex-grow: 1;
+}
+
+.video-container__timestamps__title {
+    text-align: center;
+}
