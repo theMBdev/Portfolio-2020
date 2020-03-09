@@ -34,6 +34,15 @@ p {
     font-size: 20px;
     color: #5F6368;
     line-height: 28px;
+    opacity: 1;
+}
+
+.header p {
+    font-size: 20px;
+    color: #5F6368;
+    line-height: 28px;
+    width: 400px;
+    margin: auto;
 }
 
 
@@ -361,24 +370,25 @@ a:hover {
 
 
 
-
+/* cards */
 .card {
     margin-bottom: 140px;
 }
 
 .card__main {
-    width: 536px;
-    height: 536px;
+    width: 100%;
+    height: 566px;
     background-color: white;
     border-radius: 10px;
     position: relative;
-    -webkit-box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.3);
-    box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.1);
+    margin-bottom: 120px;
 }
 
 .card__image {
-    width: 488px;
+    width: 400px;
     height: 265px;
     background-color: aquamarine;
     border-radius: 10px;
@@ -387,9 +397,9 @@ a:hover {
     margin: auto;
     overflow: hidden;
 
-    -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
-    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
 }
 
 .card__image img {
@@ -399,22 +409,17 @@ a:hover {
 }
 
 .card-holder {
-    width: 100%;
-    background-color: gold;
-    padding-top: 100px;
-    
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
-    
-    
+    color: white;
+    padding: 1px;
+    height: auto;  
 }
 
 .card__text {
     position: relative;
     top: -70px;
-    width: 488px;
-    margin: auto;    
+    width: 400px;
+    margin: auto;  
+    justify-content: center;
     font-size: 
 }
 
@@ -461,6 +466,7 @@ a:hover {
     margin: auto;
     line-height: 40px;
     font-size: 20px;
+    cursor: pointer;
 
     -webkit-box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.5);
@@ -478,4 +484,82 @@ a:hover {
     padding-top: 64px;
 }
 
+.cards {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    background-color: white;
+    justify-content: center;
+    grid-template-columns: repeat(1, 450px);
+    padding-top: 80px;
+}
 
+/* Screen larger than 600px? 2 column */
+@media (min-width: 952px) {
+    .cards { 
+        grid-template-columns: repeat(2, 450px); 
+
+    }
+    .header p {
+        width: 700px;
+    }
+}
+
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 1420px) {
+    .cards { grid-template-columns: repeat(3, 450px); }
+}
+
+.header {
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.header__center {
+    background-color: beige;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card__image__overlay {
+    width: 400px;
+    height: 265px;
+    
+    background-color: black;
+    opacity: 0;
+    position: absolute;
+    bottom: 80px;
+    left: 24px;
+    border-radius: 10px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card__image__overlay:hover {
+    opacity: 0.8;
+}
+
+.card__image__overlay:hover p{
+    opacity: 1;
+    color: white;
+}
+
+.overlay-container {
+    position: relative;
+}
