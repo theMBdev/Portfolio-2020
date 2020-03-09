@@ -36,6 +36,60 @@ p {
     line-height: 28px;
 }
 
+
+/* Nav */
+nav {
+    background: white;
+    padding: 5px 20px;
+    position: fixed;
+    width: 100%;    
+}
+ul {
+    list-style-type: none;
+}
+a {
+    color: #202124;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    order: 1; 
+    flex: 1;
+}
+.logo a:hover {
+    text-decoration: none;
+}
+.logo a {
+    font-size: 20px;
+}
+
+.item {
+    display: block;
+    width: auto;
+}
+.item {
+    order: 1;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu li {
+    padding: 15px 10px;
+}
+.menu li.button {
+    padding-right: 0;
+}
+
+
+
+
 .page-container {
     max-width: 1100px;
     width: 100%;
@@ -43,7 +97,8 @@ p {
     background-color: white;
     margin: auto;
     padding-left: 10px;
-    padding-right: 10px;    
+    padding-right: 10px;  
+    padding-top: 64px;
 }
 
 .video-container {
@@ -101,6 +156,7 @@ p {
     line-height: 40px;     
     margin-bottom: 10px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .technologies-container {
@@ -187,6 +243,13 @@ p {
 }
 
 @media only screen and (max-width: 900px) {
+
+    nav {
+        background: white;
+        padding: 5px 0px;
+        position: fixed;
+        width: 100%;    
+    }
 
     .page-container  {        
         width: 100%;
@@ -294,4 +357,6 @@ p {
 .timestamps__scroll::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
+
+
 
