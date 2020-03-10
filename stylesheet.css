@@ -41,7 +41,7 @@ p {
     font-size: 20px;
     color: #5F6368;
     line-height: 28px;
-    width: 400px;
+    max-width: 90%;
     margin: auto;
 }
 
@@ -502,7 +502,7 @@ a:hover {
 
     }
     .header p {
-        width: 700px;
+        max-width: 800px;
     }
 }
 
@@ -537,7 +537,7 @@ a:hover {
 .card__image__overlay {
     width: 400px;
     height: 265px;
-    
+
     background-color: black;
     opacity: 0;
     position: absolute;
@@ -563,3 +563,8 @@ a:hover {
 .overlay-container {
     position: relative;
 }
+
+
+
+
+
