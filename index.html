@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="stylesheet.css" type="text/css">
 
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">        
+
     </head>
     <body>
 
@@ -24,16 +25,23 @@
             <section class="video-container">
                 <div class="video-container__video">
 
+                    <video id="video" class="video"  controls>
+                        <source src="http://mirror.cessen.com/blender.org/peach/trailer/trailer_iphone.m4v" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+
+
                 </div>
                 <div class="video-container__timestamps">
                     <div class="video-container__timestamps__title"><h2>Timestamps</h2>
                     </div>
 
                     <div class="timestamps__scroll">
-                        <div class="timestamps__row">
+
+                        <div class="timestamps__row" onclick="jumpTime(23)">
                             <div class="timestamps__time">10:00</div>
                             <div class="timestamps__event">test test test</div>
-                        </div>
+                        </div>     
 
                         <div class="timestamps__row">
                             <div class="timestamps__time">10:00</div>
@@ -66,6 +74,12 @@
                         </div>
 
                     </div>
+                    <script>
+                        function jumpTime(time) {
+                            console.log("t");
+                            document.getElementById("video").currentTime = time;
+                        }
+                    </script>
 
 
                 </div>
@@ -124,8 +138,8 @@
                     <div class=""><a data-fancybox="gallery" href="img.png"><img src="img.png"></a></div>
                     <div class=""><a data-fancybox="gallery" href="img.png"><img src="img.png"></a></div>
                     <div class=""><a data-fancybox="gallery" href="img.png"><img src="img.png"></a></div>                    
-                    
-      
+
+
                 </div>
             </section>
 
@@ -134,8 +148,11 @@
 
         </main>
 
-        
 
+        <script>
+            var video = document.getElementById("MY_VIDEO_1");    
+            console.log(video);
+        </script>
 
 
         <!-- Jquery http://fancyapps.com/fancybox/3/ -->
