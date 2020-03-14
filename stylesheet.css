@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: gainsboro;
+    background-color: hsl(0,0%,95%);
 }
 
 h1 {
@@ -37,6 +37,8 @@ p {
     opacity: 1;
 }
 
+
+
 .header p {
     font-size: 20px;
     color: #5F6368;
@@ -57,12 +59,14 @@ nav {
 ul {
     list-style-type: none;
 }
+
 a {
     color: #202124;
-    text-decoration: none;
+    text-decoration: none;    
 }
+
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .logo {
@@ -119,7 +123,7 @@ a:hover {
 
 .video-container__video {    
     height: 462.94px;    
-    background-color: beige;
+    background-color: black;
     flex-grow: 1;
 }
 
@@ -150,7 +154,19 @@ a:hover {
     align-items: center;
     justify-content: center;
     flex-shrink: 1;
-    min-width: 257px;
+    min-width: 257px;    
+    position: relative;
+    bottom: 0px;
+    transition: 1s;
+}
+
+.intro-container__links a:hover {
+    text-decoration: none;
+    -webkit-box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
+    position: relative;
+    bottom: 2px;    
 }
 
 .intro-container__link:first-child {   
@@ -167,6 +183,9 @@ a:hover {
     margin-bottom: 10px;
     font-size: 20px;
     cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    bottom: 0px;
 }
 
 .technologies-container {
@@ -183,6 +202,10 @@ a:hover {
 
 .technologies-container__technology {
     margin-bottom: 20px;
+}
+
+.technologies-container__technology:last-child {
+    margin-bottom: 0px;
 }
 
 .technologies-container__links {
@@ -206,10 +229,15 @@ a:hover {
 .timestamps__row {
     display: flex;    
     width: 227px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     height: auto;
     cursor: pointer;
     align-items: baseline;
+    padding: 5px;
+}
+
+.timestamps__row:hover {
+    color: gainsboro;
 }
 
 .timestamps__time {      
@@ -277,8 +305,7 @@ a:hover {
     }
 
     .video-container__video { 
-        height: 276px; 
-        background-color: beige;
+        height: 276px;   
     }
 
     .video-container__timestamps {    
@@ -296,6 +323,7 @@ a:hover {
         justify-content: center;
         width: 100%;
         padding-top: 10px;
+
     }
 
     .intro-container__link:first-child {   
@@ -304,7 +332,6 @@ a:hover {
     }
 
     .intro-container__link {
-        height: 40px;        
         margin-bottom: 0px;
     }
 
@@ -334,7 +361,7 @@ a:hover {
 }
 
 .timestamps__event {
-    font-size: 20px;
+    font-size: 18px;
     display: flex;  
 
     display: flex;  
