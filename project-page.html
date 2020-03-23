@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>title</title>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">        
+
+    </head>
+    <body>
+
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="/">Martin Brown</a></li>
+                <li class="item"><a href="/">Home</a></li>
+                <li class="item"><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+
+        <main class="page-container">
+
+            <section class="video-container">
+                <div class="video-container__video">
+
+                    <video id="video" class="video"  controls>
+                        <source src="http://mirror.cessen.com/blender.org/peach/trailer/trailer_iphone.m4v" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+
+
+                </div>
+                <div class="video-container__timestamps">
+                    <div class="video-container__timestamps__title"><h2>Timestamps</h2>
+                    </div>
+
+                    <div class="timestamps__scroll">
+
+                        <div class="timestamps__row" onclick="jumpTime(23)">
+                            <div class="timestamps__time">10:00</div>
+                            <div class="timestamps__event">test test test</div>
+                        </div>     
+
+                        <div class="timestamps__row">
+                            <div class="timestamps__time">10:00</div>
+                            <div class="timestamps__event">test test test test </div>
+                        </div>
+
+                        <div class="timestamps__row">
+                            <div class="timestamps__time">10:00</div>
+                            <div class="timestamps__event">test test test</div>
+                        </div>
+
+                        <div class="timestamps__row">
+                            <div class="timestamps__time">10:00</div>
+                            <div class="timestamps__event">test test test test</div>
+                        </div>
+
+                        <div class="timestamps__row">
+                            <div class="timestamps__time">10:00</div>
+                            <div class="timestamps__event">test test test</div>
+                        </div>
+
+                        <div class="timestamps__row">
+                            <div class="timestamps__time">10:00</div>
+                            <div class="timestamps__event">test test test test</div>
+                        </div>
+
+                        <div class="timestamps__row">
+                            <div class="timestamps__time">10:00</div>
+                            <div class="timestamps__event">test test test</div>
+                        </div>
+
+                    </div>
+                    <script>
+                        function jumpTime(time) {
+                            document.getElementById("video").currentTime = time;
+                        }
+                    </script>
+
+
+                </div>
+            </section>
+
+            <section class="intro-container">
+
+                <div class="intro-container__text">
+
+                    <h1>Project 1</h1>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis est convallis, suscipit massa sit amet, faucibus massa.  vitae erat. Nunc vestibulum ut sem quis dictum. Phasellus gravida nisl a liguld</p>
+
+                </div>
+
+                <div class="intro-container__links">
+                    <div class="intro-container__link">Link</div>
+                    <div class="intro-container__link">Link</div>
+                </div>
+
+            </section>
+
+            <section class="technologies-container">
+
+                <div class="technologies-container__text">
+
+                    <h2>Technologies Used</h2>                      
+
+                    <div class="technologies-container__technology">
+                        <h3>Maps</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis est convallis, suscipit massa sit amet, faucibus massa.  vitae erat. Nunc vestibulum ut sem quis dictum. Phasellus gravida nisl a ligula hendrerit consectetur.</p>
+                    </div>
+
+                    <div class="technologies-container__technology">
+                        <h3>Maps</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis est convallis, suscipit massa sit amet, faucibus massa.  vitae erat. Nunc vestibulum ut sem quis dictum. Phasellus gravida nisl a ligula hendrerit consectetur.</p>
+                    </div>
+
+                    <div class="technologies-container__technology">
+                        <h3>Maps</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis est convallis, suscipit massa sit amet, faucibus massa.  vitae erat. Nunc vestibulum ut sem quis dictum. Phasellus gravida nisl a ligula hendrerit consectetur.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <h2>Ui Design</h2>
+            <h3>Low Fidelity Mock Ups</h3>  
+
+
+            <section class="images-container"> 
+                <h3>High Fidelity Mock Ups</h3> 
+                <div class="images-container__images"> 
+                    <div class=""><a data-fancybox="gallery" href="img.png"><img src="img.png"></a></div>
+                    <div class=""><a data-fancybox="gallery" href="img.png"><img src="img.png"></a></div>
+                    <div class=""><a data-fancybox="gallery" href="img.png"><img src="img.png"></a></div>                    
+
+
+                </div>
+            </section>
+
+            <section class="highlights-container">
+                <h1>Project Highlights</h1>
+                <div class="highlights-container__highlight">
+                    <div class="highlight__left">
+                        <img class="highlight__image" src="img.png">
+                    </div>
+                    <div class="highlight__right">
+                        <div class="highlight__right__text">
+                            <h3>Title</h3>                            
+                            <p>This is some text al al his is some text al al his is some text al alhis is some text al al his is some text al al</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+        </main>
+
+
+        <!-- Jquery http://fancyapps.com/fancybox/3/ -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+    </body>
+</html>
