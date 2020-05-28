@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>title</title>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">        
+
+    </head>
+    <body>
+
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="/">Martin Brown</a></li>
+                <li class="item"><a href="/">Home</a></li>
+                <li class="item"><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+
+        <main class="page-container">
+
+            <section class="video-container">
+                <div class="video-container__video">
+
+                    <video id="video" class="video"  controls>
+                        <source src="https://res.cloudinary.com/dqyaxjtvh/video/upload/v1584145011/WW2Final_u16siq.mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+
+
+                </div>
+                <div class="video-container__timestamps">
+                    <div class="video-container__timestamps__title"><h2>Timestamps</h2>
+                    </div>
+
+                    <div class="timestamps__scroll">
+
+                        <div class="timestamps__row" onclick="jumpTime(0)">
+                            <div class="timestamps__time">0:00</div>
+                            <div class="timestamps__event">Home Page</div>
+                        </div>     
+
+                        <div class="timestamps__row" onclick="jumpTime(2.5)">
+                            <div class="timestamps__time">0:02</div>
+                            <div class="timestamps__event">JS Slider</div>
+                        </div>
+
+                        <div class="timestamps__row" onclick="jumpTime(13)">
+                            <div class="timestamps__time">0:13</div>
+                            <div class="timestamps__event">Life during war page</div>
+                        </div>
+
+                        <div class="timestamps__row" onclick="jumpTime(28)">
+                            <div class="timestamps__time">0:28</div>
+                            <div class="timestamps__event">Weapons of war page</div>
+                        </div>
+
+                        <div class="timestamps__row" onclick="jumpTime(29)">
+                            <div class="timestamps__time">0:29</div>
+                            <div class="timestamps__event">Tanks</div>
+                        </div>
+
+                        <div class="timestamps__row" onclick="jumpTime(36)">
+                            <div class="timestamps__time">0:36</div>
+                            <div class="timestamps__event">Air Vehicles</div>
+                        </div>
+
+                        <div class="timestamps__row" onclick="jumpTime(42)">
+                            <div class="timestamps__time">0:42</div>
+                            <div class="timestamps__event">Infintry Weapons</div>
+                        </div>
+                        
+                        <div class="timestamps__row" onclick="jumpTime(50)">
+                            <div class="timestamps__time">0:50</div>
+                            <div class="timestamps__event">War Heroes</div>
+                        </div>
+                        
+                        <div class="timestamps__row" onclick="jumpTime(61)">
+                            <div class="timestamps__time">1:01</div>
+                            <div class="timestamps__event">Responsiveness</div>
+                        </div>                       
+                        
+
+                    </div>
+                    <script>
+                        function jumpTime(time) {                            
+                            document.getElementById("video").currentTime = time;
+                        }
+                    </script>
+
+
+                </div>
+            </section>
+
+            <section class="intro-container">
+
+                <div class="intro-container__text">
+
+                    <h1>WW1</h1>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis est convallis, suscipit massa sit amet, faucibus massa.  vitae erat. Nunc vestibulum ut sem quis dictum. Phasellus gravida nisl a liguld</p>
+
+                </div>
+
+                <div class="intro-container__links">
+                    <a href="https://github.com/theMBdev/WW1-SPA-Project" class="intro-container__link">Github</a>
+                    <a href="https://thembdev.github.io/WW1-SPA-Project/#" class="intro-container__link">Link</a>
+                </div>
+                
+            </section>
+
+            <section class="technologies-container">
+
+                <div class="technologies-container__text">
+
+                    <h2>Technologies Used</h2>                      
+
+                    <div class="technologies-container__technology">
+                        <h3>PHP</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis est convallis, suscipit massa sit amet, faucibus massa.  vitae erat. Nunc vestibulum ut sem quis dictum. Phasellus gravida nisl a ligula hendrerit consectetur.</p>
+                    </div>
+
+                    <div class="technologies-container__technology">
+                        <h3>SQL</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis est convallis, suscipit massa sit amet, faucibus massa.  vitae erat. Nunc vestibulum ut sem quis dictum. Phasellus gravida nisl a ligula hendrerit consectetur.</p>
+                    </div>
+
+                    <div class="technologies-container__technology">
+                        <h3>Ajax</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis est convallis, suscipit massa sit amet, faucibus massa.  vitae erat. Nunc vestibulum ut sem quis dictum. Phasellus gravida nisl a ligula hendrerit consectetur.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <h2>Ui Design</h2>
+            <h3>Low Fidelity Mock Ups</h3>  
+            <br>
+            <br>
+
+            <section class="images-container"> 
+                <h3>High Fidelity Mock Ups</h3> 
+                <div class="images-container__images"> 
+                    <div class=""><a data-fancybox="gallery" href="img.png"><img src="img.png"></a></div>
+                    <div class=""><a data-fancybox="gallery" href="img.png"><img src="img.png"></a></div>
+                    <div class=""><a data-fancybox="gallery" href="img.png"><img src="img.png"></a></div> 
+                </div>
+            </section>
+
+
+
+
+        </main>
+
+
+        <!-- Jquery http://fancyapps.com/fancybox/3/ -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>title</title>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">        
+
+    </head>
+    <body>
+
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="/">Martin Brown</a></li>
+                <li class="item"><a href="/">Home</a></li>
+                <li class="item"><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+
+        <main class="page-container">
+
+            <section class="video-container">
+                <div class="video-container__video">
+
+                    <video id="video" class="video"  controls>
+                        <source src="https://res.cloudinary.com/dqyaxjtvh/video/upload/v1584144954/BlogNode_xfs03m.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+
+
+                </div>
+                <div class="video-container__timestamps">
+                    <div class="video-container__timestamps__title"><h2>Timestamps</h2>
+                    </div>
+
+                    <div class="timestamps__scroll">
+
+                        <div class="timestamps__row" onclick="jumpTime(0)">
+                            <div class="timestamps__time">0:00</div>
+                            <div class="timestamps__event">Home page</div>
+                        </div>     
+
+                        <div class="timestamps__row" onclick="jumpTime(12)">
+                            <div class="timestamps__time">0:12</div>
+                            <div class="timestamps__event">Create New Post </div>
+                        </div>
+
+                        <div class="timestamps__row" onclick="jumpTime(31)">
+                            <div class="timestamps__time">0:31</div>
+                            <div class="timestamps__event">Edit Post</div>
+                        </div>
+
+                        <div class="timestamps__row" onclick="jumpTime(40.5)">
+                            <div class="timestamps__time">0:40</div>
+                            <div class="timestamps__event">Delete Post</div>
+                        </div>
+
+                        <div class="timestamps__row" onclick="jumpTime(48)">
+                            <div class="timestamps__time">0:48</div>
+                            <div class="timestamps__event">Subscribe by email</div>
+                        </div>
+
+                        <div class="timestamps__row" onclick="jumpTime(56)">
+                            <div class="timestamps__time">0:56</div>
+                            <div class="timestamps__event">Authenticate email</div>
+                        </div>
+
+                        <div class="timestamps__row" onclick="jumpTime(65)">
+                            <div class="timestamps__time">1:05</div>
+                            <div class="timestamps__event">Show Authentication</div>
+                        </div>
+                        
+                        <div class="timestamps__row" onclick="jumpTime(70)">
+                            <div class="timestamps__time">1:10</div>
+                            <div class="timestamps__event">CMS - Social links</div>
+                        </div>
+                        
+                        <div class="timestamps__row" onclick="jumpTime(77)">
+                            <div class="timestamps__time">1:20</div>
+                            <div class="timestamps__event">Go to Social link</div>
+                        </div>
+                        
+                        <div class="timestamps__row" onclick="jumpTime(85)">
+                            <div class="timestamps__time">1:25</div>
+                            <div class="timestamps__event">Responsiveness</div>
+                        </div>
+
+                    </div>
+                    <script>
+                        function jumpTime(time) {                            
+                            document.getElementById("video").currentTime = time;
+                        }
+                    </script>
+
+
+                </div>
+            </section>
+
+            <section class="intro-container">
+
+                <div class="intro-container__text">
+
+                    <h1>Node Blog</h1>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis est convallis, suscipit massa sit amet, faucibus massa.  vitae erat. Nunc vestibulum ut sem quis dictum. Phasellus gravida nisl a liguld</p>
+
+                </div>
+
+                <div class="intro-container__links">
+                    <a href="https://github.com/theMBdev/node-blog" class="intro-container__link">Github</a>
+                    <a href="https://github.com/theMBdev/node-blog" class="intro-container__link">Link</a>
+                </div>
+                
+            </section>
+
+            <section class="technologies-container">
+
+                <div class="technologies-container__text">
+
+                    <h2>Technologies Used</h2>                      
+
+                    <div class="technologies-container__technology">
+                        <h3>Node.js</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis est convallis, suscipit massa sit amet, faucibus massa.  vitae erat. Nunc vestibulum ut sem quis dictum. Phasellus gravida nisl a ligula hendrerit consectetur.</p>
+                    </div>
+
+                    <div class="technologies-container__technology">
+                        <h3>Mongodb</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis est convallis, suscipit massa sit amet, faucibus massa.  vitae erat. Nunc vestibulum ut sem quis dictum. Phasellus gravida nisl a ligula hendrerit consectetur.</p>
+                    </div>
+
+                    <div class="technologies-container__technology">
+                        <h3>Nodemailer</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis est convallis, suscipit massa sit amet, faucibus massa.  vitae erat. Nunc vestibulum ut sem quis dictum. Phasellus gravida nisl a ligula hendrerit consectetur.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <h2>Ui Design</h2>
+            <h3>Low Fidelity Mock Ups</h3>  
+            <br>
+            <br>
+
+            <section class="images-container"> 
+                <h3>High Fidelity Mock Ups</h3> 
+                <div class="images-container__images"> 
+                    <div class=""><a data-fancybox="gallery" href="img.png"><img src="img.png"></a></div>
+                    <div class=""><a data-fancybox="gallery" href="img.png"><img src="img.png"></a></div>
+                    <div class=""><a data-fancybox="gallery" href="img.png"><img src="img.png"></a></div> 
+                </div>
+            </section>
+
+
+
+
+        </main>
+
+
+
+
+        <!-- Jquery http://fancyapps.com/fancybox/3/ -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+    </body>
+</html>
