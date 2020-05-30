@@ -854,3 +854,7 @@ a:hover {
 .card__image-adjust-customecomputers {    
     object-position: 0px 0px;
 }
+
+.p-title {
+    font-weight: 600;
+}
