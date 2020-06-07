@@ -1,180 +1,181 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>title</title>
-        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>title</title>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css">
 
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">        
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">        
 
-    </head>
-    <body>
+	</head>
+	<body>
 
-        <nav>
-            <ul class="menu">
-                <li class="logo"><a href="/">Martin Brown</a></li>
-                <li class="item"><a href="/">Home</a></li>
-                <li class="item"><a href="#">About</a></li>
-            </ul>
-        </nav>
-
-
-        <main class="page-container">
-
-            <section class="video-container">
-                <div class="video-container__video">
-
-                    <video id="video" class="video"  controls>
-                        <source src="https://res.cloudinary.com/dqyaxjtvh/video/upload/v1584144986/BlogPhpFinal_jkodfi.mp4">
-                        Your browser does not support HTML5 video.
-                    </video>
+		<nav>
+			<div class="nav__container">
+				<ul class="menu">
+					<li class="logo"><a href="/">Martin Brown</a></li>
+					<li class="item"><a href="/">Home</a></li>
+					<li class="item"><a href="#">About</a></li>
+				</ul>
+			</div>
+		</nav>
 
 
-                </div>
-                <div class="video-container__timestamps">
-                    <div class="video-container__timestamps__title"><h2>Timestamps</h2>
-                    </div>
+		<main class="page-container">
 
-                    <div class="timestamps__scroll">
+			<section class="video-container">
+				<div class="video-container__video">
 
-                        <div class="timestamps__row" onclick="jumpTime(0)">
-                            <div class="timestamps__time">0:00</div>
-                            <div class="timestamps__event">Sign Up</div>
-                        </div>     
-
-                        <div class="timestamps__row" onclick="jumpTime(17)">
-                            <div class="timestamps__time">0:17</div>
-                            <div class="timestamps__event">New Post</div>
-                        </div>
-
-                        <div class="timestamps__row" onclick="jumpTime(36)">
-                            <div class="timestamps__time">0:36</div>
-                            <div class="timestamps__event">Edit details (Ajax)</div>
-                        </div>
-
-                        <div class="timestamps__row" onclick="jumpTime(61)">
-                            <div class="timestamps__time">1:01</div>
-                            <div class="timestamps__event">Second Post</div>
-                        </div>
-
-                        <div class="timestamps__row" onclick="jumpTime(73)">
-                            <div class="timestamps__time">1:13</div>
-                            <div class="timestamps__event">Edit Post</div>
-                        </div>
-
-                        <div class="timestamps__row" onclick="jumpTime(81)">
-                            <div class="timestamps__time">1:21</div>
-                            <div class="timestamps__event">Delete Post</div>
-                        </div>
-
-                        <div class="timestamps__row" onclick="jumpTime(91)">
-                            <div class="timestamps__time">1:31</div>
-                            <div class="timestamps__event">Responsivness</div>
-                        </div>
-
-                        <div class="timestamps__row" onclick="jumpTime(106)">
-                            <div class="timestamps__time">1:46</div>
-                            <div class="timestamps__event">Log Out</div>
-                        </div>
-
-                        <div class="timestamps__row" onclick="jumpTime(112.5)">
-                            <div class="timestamps__time">1:52</div>
-                            <div class="timestamps__event">Database</div>
-                        </div>                       
+					<video id="video" class="video"  controls>
+						<source src="https://res.cloudinary.com/dqyaxjtvh/video/upload/v1584144986/BlogPhpFinal_jkodfi.mp4">
+						Your browser does not support HTML5 video.
+					</video>
 
 
-                    </div>
-                    <script>
-                        function jumpTime(time) {                            
-                            document.getElementById("video").currentTime = time;
-                        }
-                    </script>
+				</div>
+				<div class="video-container__timestamps">
+					<div class="video-container__timestamps__title"><h2>Timestamps</h2>
+					</div>
+
+					<div class="timestamps__scroll">
+
+						<div class="timestamps__row" onclick="jumpTime(0)">
+							<div class="timestamps__time">0:00</div>
+							<div class="timestamps__event">Sign Up</div>
+						</div>     
+
+						<div class="timestamps__row" onclick="jumpTime(17)">
+							<div class="timestamps__time">0:17</div>
+							<div class="timestamps__event">New Post</div>
+						</div>
+
+						<div class="timestamps__row" onclick="jumpTime(36)">
+							<div class="timestamps__time">0:36</div>
+							<div class="timestamps__event">Edit details (Ajax)</div>
+						</div>
+
+						<div class="timestamps__row" onclick="jumpTime(61)">
+							<div class="timestamps__time">1:01</div>
+							<div class="timestamps__event">Second Post</div>
+						</div>
+
+						<div class="timestamps__row" onclick="jumpTime(73)">
+							<div class="timestamps__time">1:13</div>
+							<div class="timestamps__event">Edit Post</div>
+						</div>
+
+						<div class="timestamps__row" onclick="jumpTime(81)">
+							<div class="timestamps__time">1:21</div>
+							<div class="timestamps__event">Delete Post</div>
+						</div>
+
+						<div class="timestamps__row" onclick="jumpTime(91)">
+							<div class="timestamps__time">1:31</div>
+							<div class="timestamps__event">Responsivness</div>
+						</div>
+
+						<div class="timestamps__row" onclick="jumpTime(106)">
+							<div class="timestamps__time">1:46</div>
+							<div class="timestamps__event">Log Out</div>
+						</div>
+
+						<div class="timestamps__row" onclick="jumpTime(112.5)">
+							<div class="timestamps__time">1:52</div>
+							<div class="timestamps__event">Database</div>
+						</div>                       
 
 
-                </div>
-            </section>
-
-            <section class="intro-container">
-
-                <div class="intro-container__text">
-
-                    <h1>PHP Blog</h1>
-
-                    <h3>What is it</h3>
-                    <p>Its a blogging platform that users can sign up to use. It has a sign in/ sign up authentication and CMS were the user can create, edit, update and delete posts as well as update other information about their blog.</p>
-                    <br>
-                    <h3>Why was it built</h3>
-                    <p>After using a little php in a past project I wanted to learn more and decided to build a blog which would allow me to use crud functions along with a sql database. 
-                    </p>
-
-                </div>
-
-                <div class="intro-container__links">
-                    <a href="https://github.com/theMBdev/Blog" class="intro-container__link">Github</a>
-                    <a href="" class="intro-container__link">Link</a>
-                </div>
-
-            </section>
-
-            <section class="technologies-container">
-
-                <div class="technologies-container__text">
-
-                    <h2>Technologies Used</h2>                      
-
-                    <div class="technologies-container__technology">
-                        <h3>PhpMyAdmin</h3>
-                        <p>Used as the database to store the users and their blog posts.</p>
-                    </div>
-                    
-                    <div class="technologies-container__technology">
-                        <h3>SQL</h3>
-                        <p>Used to query the database</p>
-                    </div>
-
-                    <div class="technologies-container__technology">
-                        <h3>PHP</h3>
-                        <p>Used as the backend language to access the database</p>
-                    </div>
-
-                    <div class="technologies-container__technology">
-                        <h3>Ajax</h3>
-                        <p>Used to let the user change settings without reloading the page</p>
-                    </div>
-
-                </div>
-
-            </section>
-
-            <h2>Ui Design</h2>
-            <h3>Low Fidelity Mock Ups</h3>  
-            <br>
-            <br>
-
-            <section class="images-container"> 
-                <h3>High Fidelity Mock Ups</h3> 
-                <div class="images-container__images"> 
-                    <div class=""><a data-fancybox="gallery" href="img.png"><img src="img.png"></a></div>
-                    <div class=""><a data-fancybox="gallery" href="img.png"><img src="img.png"></a></div>
-                    <div class=""><a data-fancybox="gallery" href="img.png"><img src="img.png"></a></div> 
-                </div>
-            </section>
+					</div>
+					<script>
+						function jumpTime(time) {                            
+							document.getElementById("video").currentTime = time;
+						}
+					</script>
 
 
+				</div>
+			</section>
 
+			<section class="intro-container">
 
-        </main>
+				<div class="intro-container__text">
+
+					<h1>PHP Blog</h1>
+
+					<h3>What is it</h3>
+					<p>Its a blogging platform that users can sign up to use. It has a sign in/ sign up authentication and CMS were the user can create, edit, update and delete posts as well as update other information about their blog.</p>
+					<br>
+					<h3>Why was it built</h3>
+					<p>After using a little php in a past project I wanted to learn more and decided to build a blog which would allow me to use crud functions along with a sql database. 
+					</p>
+
+				</div>
+
+				<div class="intro-container__links">
+					<a href="https://github.com/theMBdev/Blog" class="intro-container__link">Github</a>
+				</div>
+
+			</section>
+
+			<section class="technologies-container">
+
+				<div class="technologies-container__text">
+
+					<h2>Technologies Used</h2>                      
+
+					<div class="technologies-container__technology">
+						<h3>PhpMyAdmin</h3>
+						<p>Used as the database to store the users and their blog posts.</p>
+					</div>
+
+					<div class="technologies-container__technology">
+						<h3>SQL</h3>
+						<p>Used to query the database</p>
+					</div>
+
+					<div class="technologies-container__technology">
+						<h3>PHP</h3>
+						<p>Used as the backend language to access the database</p>
+					</div>
+
+					<div class="technologies-container__technology">
+						<h3>Ajax</h3>
+						<p>Used to let the user change settings without reloading the page</p>
+					</div>
+
+				</div>
+
+			</section>
+
+			<h2>Ui Design</h2>
+			<h3>Low Fidelity Mock Ups</h3>  
+			<br>
+			<br>
+
+			<section class="images-container"> 
+				<h3>High Fidelity Mock Ups</h3> 
+				<div class="images-container__images"> 
+					<div class=""><a data-fancybox="gallery" href="img.png"><img src="img.png"></a></div>
+					<div class=""><a data-fancybox="gallery" href="img.png"><img src="img.png"></a></div>
+					<div class=""><a data-fancybox="gallery" href="img.png"><img src="img.png"></a></div> 
+				</div>
+			</section>
 
 
 
 
-
-        <!-- Jquery http://fancyapps.com/fancybox/3/ -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+		</main>
 
 
-    </body>
+
+
+
+		<!-- Jquery http://fancyapps.com/fancybox/3/ -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+	</body>
 </html>

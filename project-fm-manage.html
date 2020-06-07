@@ -1,96 +1,98 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>title</title>
-        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>title</title>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css">
 
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">        
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">        
 
-    </head>
-    <body>
+	</head>
+	<body>
 
-        <nav>
-            <ul class="menu">
-                <li class="logo"><a href="/">Martin Brown</a></li>
-                <li class="item"><a href="/">Home</a></li>
-                <li class="item"><a href="#">About</a></li>
-            </ul>
-        </nav>
-
-
-        <main class="page-container">
-
-            <section class="video-container">
-                <div class="video-container__video">
-
-                    <video id="video" class="video"  controls>
-                        <source src="https://res.cloudinary.com/dqyaxjtvh/video/upload/q_auto:best/v1590951907/Frontend_Mentor_Manage_landing_page_bqsp0z.mp4">
-                        Your browser does not support HTML5 video.
-                    </video>
+		<nav>
+			<div class="nav__container">
+				<ul class="menu">
+					<li class="logo"><a href="/">Martin Brown</a></li>
+					<li class="item"><a href="/">Home</a></li>
+					<li class="item"><a href="#">About</a></li>
+				</ul>
+			</div>
+		</nav>
 
 
-                </div>
-                <div class="video-container__timestamps">
-                    <div class="video-container__timestamps__title"><h2>Timestamps</h2>
-                    </div>
+		<main class="page-container">
 
-                    <div class="timestamps__scroll">
+			<section class="video-container">
+				<div class="video-container__video">
 
-                        <div class="timestamps__row" onclick="jumpTime(0)">
-                            <div class="timestamps__time">0:00</div>
-                            <div class="timestamps__event">Home Page</div>
-                        </div>     
-
-                        <div class="timestamps__row" onclick="jumpTime(18)">
-                            <div class="timestamps__time">0:18</div>
-                            <div class="timestamps__event">Responsiveness</div>
-                        </div>
-
-                    </div>
-                    <script>
-                        function jumpTime(time) {                            
-                            document.getElementById("video").currentTime = time;
-                        }
-                    </script>
+					<video id="video" class="video"  controls>
+						<source src="https://res.cloudinary.com/dqyaxjtvh/video/upload/q_auto:best/v1590951907/Frontend_Mentor_Manage_landing_page_bqsp0z.mp4">
+						Your browser does not support HTML5 video.
+					</video>
 
 
-                </div>
-            </section>
+				</div>
+				<div class="video-container__timestamps">
+					<div class="video-container__timestamps__title"><h2>Timestamps</h2>
+					</div>
 
-            <section class="intro-container">
+					<div class="timestamps__scroll">
 
-                <div class="intro-container__text">
+						<div class="timestamps__row" onclick="jumpTime(0)">
+							<div class="timestamps__time">0:00</div>
+							<div class="timestamps__event">Home Page</div>
+						</div>     
 
-                    <h1>FM - Manage</h1>
-                    
-                    <h3>What is it</h3>
-                    <p>A design coded from Frontend Mentor. Frontend Mentor gives out designs as a png file then you create it using html, css and javascript.</p>
-                        <br>
-                    <h3>Why was it built</h3>
-                    <p>
-                        Frontend coding practice.
-                    </p>
+						<div class="timestamps__row" onclick="jumpTime(18)">
+							<div class="timestamps__time">0:18</div>
+							<div class="timestamps__event">Responsiveness</div>
+						</div>
 
-                </div>
-
-                <div class="intro-container__links">
-                    <a href="https://github.com/theMBdev/manage-landing-page-master-frontendmentor" class="intro-container__link">Github</a>
-                    <a href="https://thembdev.github.io/manage-landing-page-master-frontendmentor/" class="intro-container__link">Link</a>
-                </div>
-
-            </section>
+					</div>
+					<script>
+						function jumpTime(time) {                            
+							document.getElementById("video").currentTime = time;
+						}
+					</script>
 
 
-        </main>
+				</div>
+			</section>
+
+			<section class="intro-container">
+
+				<div class="intro-container__text">
+
+					<h1>FM - Manage</h1>
+
+					<h3>What is it</h3>
+					<p>A design coded from Frontend Mentor. Frontend Mentor gives out designs as a png file then you create it using html, css and javascript.</p>
+					<br>
+					<h3>Why was it built</h3>
+					<p>
+						Frontend coding practice.
+					</p>
+
+				</div>
+
+				<div class="intro-container__links">
+					<a href="https://github.com/theMBdev/manage-landing-page-master-frontendmentor" class="intro-container__link">Github</a>
+					<a href="https://thembdev.github.io/manage-landing-page-master-frontendmentor/" class="intro-container__link">Site</a>
+				</div>
+
+			</section>
 
 
-        <!-- Jquery http://fancyapps.com/fancybox/3/ -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+		</main>
 
 
-    </body>
+		<!-- Jquery http://fancyapps.com/fancybox/3/ -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+	</body>
 </html>
