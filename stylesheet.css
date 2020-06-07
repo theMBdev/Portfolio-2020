@@ -380,12 +380,10 @@ a:hover {
     padding: 0px 5px 5px 5px;
 }
 
-
-
-
 .image-container {
     display: flex;    
 }
+
 
 .image-container img {
     width: 100%;
@@ -870,3 +868,4 @@ a:hover {
 	max-width: 1420px;
 	margin: auto;
 }
+
