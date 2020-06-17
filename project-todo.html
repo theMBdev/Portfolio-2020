@@ -27,11 +27,10 @@
 			<section class="video-container">
 				<div class="video-container__video">
 
-					<video id="video" class="video"  controls>
-						<source src="https://res.cloudinary.com/dqyaxjtvh/video/upload/q_auto:best/v1590951907/Frontend_Mentor_Manage_landing_page_bqsp0z.mp4">
+					<video id="video" class="video" controls>
+						<source src="https://res.cloudinary.com/dqyaxjtvh/video/upload/v1591809430/React_App_eyfry0.mp4">
 						Your browser does not support HTML5 video.
 					</video>
-
 
 				</div>
 				<div class="video-container__timestamps">
@@ -42,13 +41,18 @@
 
 						<div class="timestamps__row" onclick="jumpTime(0)">
 							<div class="timestamps__time">0:00</div>
-							<div class="timestamps__event">Home Page</div>
-						</div>     
+							<div class="timestamps__event">Add new todo</div>
+						</div> 
 
-						<div class="timestamps__row" onclick="jumpTime(18)">
-							<div class="timestamps__time">0:18</div>
-							<div class="timestamps__event">Responsiveness</div>
-						</div>
+						<div class="timestamps__row" onclick="jumpTime(8)">
+							<div class="timestamps__time">0:08</div>
+							<div class="timestamps__event">Mark todo as done</div>
+						</div> 
+						
+						<div class="timestamps__row" onclick="jumpTime(13)">
+							<div class="timestamps__time">0:13</div>
+							<div class="timestamps__event">Remove todo</div>
+						</div> 
 
 					</div>
 					<script>
@@ -65,34 +69,58 @@
 
 				<div class="intro-container__text">
 
-					<h1>FM - Manage</h1>
+					<h1>Todo List - React</h1>
 
 					<h3>What is it</h3>
-					<p>A design coded from Frontend Mentor. Frontend Mentor gives out designs as a png file then you create it using html, css and javascript.</p>
+					<p>Its a todo list built using react were you can add and remove todos. You can also mark todos as complete. </p>
 					<br>
 					<h3>Why was it built</h3>
 					<p>
-						Frontend coding practice.
+						To practice using reacts global context and reducer to modularize the code.
 					</p>
 
 				</div>
 
 				<div class="intro-container__links">
-					<a href="https://github.com/theMBdev/manage-landing-page-master-frontendmentor" class="intro-container__link">Github</a>
-					<a href="https://thembdev.github.io/manage-landing-page-master-frontendmentor/" class="intro-container__link">Site</a>
+					<a href="https://github.com/theMBdev/react-hooks-intro-To-Do-List-global" class="intro-container__link">Github</a>
+					<a href="https://thembdev.github.io/react-hooks-intro-To-Do-List-global/" class="intro-container__link">Site</a>
 				</div>
 
 			</section>
 
 
-		</main>
+			<section class="technologies-container">
+				<div class="technologies-container__text">
+					<h2>Technologies Used</h2>                     
 
+					<div class="technologies-container__technology">
+						<h3>React</h3>
+						<p></p>
+					</div>
+
+				</div>
+			</section>
+
+
+			<h2>Ui Design</h2>
+
+			<section class="images-container"> 
+				<div class="image-container">
+					<div class="image-container__column col-left">
+						<div class="image-text">Main Page</div>
+						<a data-fancybox="gallery" href="./images/todo.png"><img src="./images/todo.png"></a>
+					</div>
+					<div class="image-container__column image-container__column--empty col-right">					
+					</div>
+				</div>
+			</section>
+
+		</main>
 
 		<!-- Jquery http://fancyapps.com/fancybox/3/ -->
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
 
 	</body>
 </html>
