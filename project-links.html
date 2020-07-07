@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Project</title>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css">
+
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">        
+
+	</head>
+	<body>
+
+		<nav>
+			<div class="nav__container">
+				<ul class="menu">
+					<li class="logo"><a href="/">Martin Brown</a></li>
+					<li class="item"><a href="/">Home</a></li>
+					<li class="item"><a href="#">About</a></li>
+				</ul>
+			</div>
+		</nav>
+
+
+		<main class="page-container">
+
+			<section class="video-container">
+				<div class="video-container__video">
+
+					<video id="video" class="video" controls>
+						<source src="https://res.cloudinary.com/dqyaxjtvh/video/upload/v1594123366/links_oqy8za.mp4">
+						Your browser does not support HTML5 video.
+					</video>
+
+				</div>
+				<div class="video-container__timestamps">
+					<div class="video-container__timestamps__title"><h2>Timestamps</h2>
+					</div>
+
+					<div class="timestamps__scroll">
+
+						<div class="timestamps__row" onclick="jumpTime(0)">
+							<div class="timestamps__time">0:00</div>
+							<div class="timestamps__event">Open a link</div>
+						</div> 
+
+						<div class="timestamps__row" onclick="jumpTime(4)">
+							<div class="timestamps__time">0:04</div>
+							<div class="timestamps__event">Create a link</div>
+						</div> 
+
+						<div class="timestamps__row" onclick="jumpTime(16)">
+							<div class="timestamps__time">0:16</div>
+							<div class="timestamps__event">Edit a link</div>
+						</div> 
+
+						<div class="timestamps__row" onclick="jumpTime(26)">
+							<div class="timestamps__time">0:26</div>
+							<div class="timestamps__event">Delete a link</div>
+						</div> 
+
+					</div>
+					<script>
+						function jumpTime(time) {                            
+							document.getElementById("video").currentTime = time;
+						}
+					</script>
+
+
+				</div>
+			</section>
+
+			<section class="intro-container">
+
+				<div class="intro-container__text">
+
+					<h1>My Links - React</h1>
+
+					<h3>What is it</h3>
+					<p>Its a site were you can add web links to a list. You can create, edit and delete links.</p>
+					<br>
+					<h3>Why was it built</h3>
+					<p>
+						To practice using React with a Node.js backend api and saving the data into mongodb. Also to use React Router to have multiple pages in React.
+					</p>
+
+				</div>
+
+				<div class="intro-container__links">
+					<a href="https://github.com/theMBdev/react-links" class="intro-container__link">Github</a>
+					<!--					<a href="https://thembdev.github.io/react-hooks-intro-To-Do-List-global/" class="intro-container__link">Site</a>-->
+				</div>
+
+			</section>
+
+
+			<section class="technologies-container">
+				<div class="technologies-container__text">
+					<h2>Technologies Used</h2>                     
+
+					<div class="technologies-container__technology">
+						<h3>Node.js</h3>
+						<p>Used to build an api that the react application can intract with to get and post data.</p>
+					</div>
+
+					<div class="technologies-container__technology">
+						<h3>Mongodb</h3>
+						<p>Used to store the links created</p>
+					</div>
+
+					<div class="technologies-container__technology">
+						<h3>React</h3>
+						<p>Used to build the frontend of the application</p>
+					</div>
+
+				</div>
+			</section>
+
+
+			<h2>Ui Design</h2>
+
+			<section class="images-container"> 
+				<h3>Screen Shots</h3>
+
+				<div class="image-container">
+					<div class="image-container__column col-left">
+						<div class="image-text">Main Page</div>
+						<a data-fancybox="gallery" href="./images/links-home.png"><img src="./images/links-home.png"></a>
+					</div>
+					<div class="image-container__column col-right">	
+						<div class="image-text">Edit Page</div>
+						<a data-fancybox="gallery" href="./images/links-edit.png"><img src="./images/links-edit.png"></a>
+					</div>					
+
+				</div>				
+			</section>
+
+
+		</main>
+
+		<!-- Jquery http://fancyapps.com/fancybox/3/ -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	</body>
+</html>

@@ -275,7 +275,7 @@ a:hover {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	background-color: aquamarine;
+	background-color: gray;
 }
 
 .images-container {
@@ -545,7 +545,7 @@ a:hover {
 /* Tech cards */
 .tech-cards {
 	max-width: 1400px;
-	margin: 0 auto;
+	margin: 00px auto 60px;
 	display: grid;
 	grid-gap: 1rem;
 	background-color: hsl(0,0%,95%);
@@ -556,7 +556,7 @@ a:hover {
 .tech-card {
 	height: 100%;
 	width: 310px;
-	background-color: #D4F5D4;
+/*	background-color: #D4F5D4;*/
 	padding: 15px;
 	grid-template-columns: repeat(1, 310px);
 }
@@ -573,6 +573,11 @@ a:hover {
 	height: 100%;
 	object-fit: contain;
 }
+
+.tech-card__image--30 {
+	width: 30%;		
+}
+
 
 .tech-card__title {
 	font-size: 22px;
@@ -784,9 +789,9 @@ a:hover {
 
 
 	.tech-card {
-		height: 350px;
+		height: 370px;
 		width: 350px;
-		background-color: #D4F5D4;
+/*		background-color: #D4F5D4;*/
 		padding: 15px;
 	}
 
@@ -1022,7 +1027,7 @@ a:hover {
 
 .section-title {
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 55px;
 }
 
 
@@ -1123,4 +1128,53 @@ a:hover {
 
 
 
+
+
+.tech-card--node {
+	background: linear-gradient(180deg, rgba(212,241,212,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+}
+
+.tech-card--html {
+	background: linear-gradient(180deg, rgba(255,210,210,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+}
+
+.tech-card--mongodb {
+		background: linear-gradient(180deg, rgba(221,255,207,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+}
+
+.tech-card--php {
+	background: linear-gradient(180deg, #E2E7FF 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+}
+
+.tech-card--js {
+	background: linear-gradient(180deg, #FFF3A7 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+}
+
+.tech-card--java {
+	background: linear-gradient(180deg, #FFE8BF 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+}
+
+.tech-card--sql {
+	background: linear-gradient(180deg, #D5EDFF 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+}
+
+.tech-card--csharp {
+	background: linear-gradient(180deg, #F9E1FF 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+}
+
+.tech-card--python {
+	background: linear-gradient(180deg, #C9E7FF 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+}
+
+.tech-card--c {
+	background: linear-gradient(180deg, #D6DDFF 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+}
+
+.tech-card--design {
+	background: linear-gradient(180deg, #D8D8D8 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+}
+
+.tech-card--react {
+	background: linear-gradient(180deg, #BFF2FF 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+}
 
