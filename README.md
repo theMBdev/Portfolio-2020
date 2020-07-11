@@ -10,4 +10,4 @@ To show the projects i have completed
 Javascript, Jquery
  
 #### Live site 
-ADD LIVE SITE HERE
+https://thembdev.github.io/Portfolio-2020/
