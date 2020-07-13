@@ -1,7 +1,7 @@
 var navItems = `<div class="nav__container">
 				<ul class="menu">
-					<li class="logo"><a href="/Portfolio-2020">Martin Brown</a></li>
-					<li class="item"><a href="/Portfolio-2020">Home</a></li>
+					<li class="logo"><a href="./">Martin Brown</a></li>
+					<li class="item"><a href="./">Home</a></li>
 					<li class="item"><a href="#">About</a></li>
 				</ul>
 			</div>`;
