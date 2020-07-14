@@ -395,6 +395,13 @@ a:hover {
 	margin-right: 0px;
 }
 
+.moving-image-holder {
+	background-color: black;
+	height: 100%;
+	background-image: url(./images/portfolio-long-mobile-min.jpg);
+	background-position: 50% 0%;
+	background-size: 100% 4000%;
+}
 
 
 @media only screen and (max-width: 900px) {
@@ -493,6 +500,7 @@ a:hover {
 
 
 
+
 }
 
 .timestamps__event {
@@ -556,7 +564,7 @@ a:hover {
 .tech-card {
 	height: 100%;
 	width: 310px;
-/*	background-color: #D4F5D4;*/
+	/*	background-color: #D4F5D4;*/
 	padding: 15px;
 	grid-template-columns: repeat(1, 310px);
 }
@@ -791,7 +799,7 @@ a:hover {
 	.tech-card {
 		height: 380px;
 		width: 350px;
-/*		background-color: #D4F5D4;*/
+		/*		background-color: #D4F5D4;*/
 		padding: 15px;
 	}
 
@@ -973,6 +981,14 @@ a:hover {
 	}
 
 
+	.moving-image-holder {
+		background-color: black;
+		height: 100%;
+		background-image: url(./images/portfolio-long-mobile-min.jpg);
+		background-position: 50% 0%;
+		background-size: 100% 4000%;
+	}
+
 
 
 }
@@ -992,6 +1008,15 @@ a:hover {
 	.header p {
 		max-width: 800px;
 	}
+
+	.moving-image-holder {
+		background-color: red;
+		height: 100%;
+		width: 100%;
+		background-image: url(./images/portfolio-long-tablet-min.jpg);
+		background-position: 50% 0%;
+		background-size: 100% 1000%;
+	}
 }
 
 @media (min-width: 1120px) {
@@ -1004,6 +1029,16 @@ a:hover {
 @media (min-width: 1480px) {
 	.cards { grid-template-columns: repeat(3, 450px); }
 	.tech-cards { grid-template-columns: repeat(4, 350px); }
+
+	.moving-image-holder {
+		background-color: aquamarine;
+		height: 100%;
+		width: 100%;
+		background-image: url(./images/portfolio-long-desktop-min.jpg);
+		background-position: 50% 0%;
+		background-size: 500px 1400px;
+	}
+
 }
 
 
@@ -1130,6 +1165,14 @@ a:hover {
 
 
 
+
+
+
+
+
+
+
+
 .tech-card--node {
 	background: linear-gradient(180deg, rgba(212,241,212,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
 }
@@ -1139,7 +1182,7 @@ a:hover {
 }
 
 .tech-card--mongodb {
-		background: linear-gradient(180deg, rgba(221,255,207,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+	background: linear-gradient(180deg, rgba(221,255,207,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
 }
 
 .tech-card--php {
