@@ -364,7 +364,7 @@ a:hover {
 }
 
 .image-container {
-	display: flex;    
+	display: block;    
 }
 
 
@@ -393,6 +393,7 @@ a:hover {
 
 .col-right {
 	margin-right: 0px;
+	margin-left: 0px;
 }
 
 .moving-image-holder {
@@ -776,16 +777,15 @@ a:hover {
 	position: relative;
 }
 
+
+
+
 /* Add current values in here */
 @media (min-width: 320px) {
 
 	.cards {
 		grid-template-columns: repeat(1, 100%);
 		padding-top: 80px;
-	}
-
-	.image-container {
-		display: block;
 	}
 
 	/* Add current values in here */
